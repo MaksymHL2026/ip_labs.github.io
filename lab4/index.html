@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4</title>
+</head>
+<body>
+    <header>
+        <h1>Student Carf FORM</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="#">Лабараторні роботи</a>
+                <ol>
+                    <li><a href="../lab1/index.html">Лабораторна робота №1</a></li>
+                    <li><a href="../lab2/index.html">Лабораторна робота №2</a></li>
+                    <li><a href="../lab3/index.html">Лабораторна робота №3</a></li>
+                    <li><a href="../lab4/index.html">Лабораторна робота №4</a></li>
+                </ol></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Personal Information</h2>
+        <fieldset>
+            <legend>Provide your details</legend>
+            <label for="username">Full Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your full name"> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"> <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a password"> <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder=""> <br>
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="birthdate"> <br>
+            <label for="gender">Gender:</label> <br>
+            <input type="radio" id="gender" name="gender" value="male"> Male <br>
+            <input type="radio" id="gender" name="gender" value="female"> Female <br>
+            <input type="radio" id="gender" name="gender" value="other"> Other <br>
+            <label for="language">Languages</label> <br>
+            <input type="checkbox" id="language" value="English"> English <br>
+            <input type="checkbox" id="language" value="Spanish"> Spanish <br>
+            <input type="checkbox" id="language" value="French"> French <br>
+            <label for="country">Country</label> <br>
+            <select name="country" id="">Select your country</select> <br>
+        </fieldset>
+    </section>
+    <h3>College Subjects</h3>
+    <fieldset>
+        <legend>Select your subjects</legend>
+        <label for="subject">Choose subjects</label>
+        <select multiple="" id="subjects"></select>
+        <input type="text" id="subjects" value="Mathematics">  <br>
+    </fieldset>
+</body>
+</html>
