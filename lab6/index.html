@@ -132,7 +132,7 @@
 </main>
 
 <!-- Модальне вікно -->
-<div id="modal" class="hidden" role="dialog" aria-modal="true" aria-label="Підписка на розсилку">
+<div id="modal" class="hidden">
     <div class="modal-content">
         <form id="subscribe-form">
             <label for="email">Введіть вашу електронну пошту:</label>
@@ -146,33 +146,17 @@
 <script>
     const subscribeButton = document.getElementById("subscribe-button");
     const modal = document.getElementById("modal");
-    const form = document.getElementById("subscribe-form");
 
     subscribeButton.addEventListener("click", () => {
         modal.classList.remove("hidden");
-        document.getElementById("email").focus();
     });
 
-    // Закриття кліком по затемненому фону
     modal.addEventListener("click", (event) => {
         if (event.target === modal) {
             modal.classList.add("hidden");
         }
     });
 
-    // Закриття клавішею Escape
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            modal.classList.add("hidden");
-        }
-    });
-
-    // Збереження: без перезавантаження сторінки
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        modal.classList.add("hidden");
-        form.reset();
-    });
 </script>
 </body>
 </html>
