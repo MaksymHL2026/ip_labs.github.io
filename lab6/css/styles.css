@@ -63,7 +63,7 @@ h2 {
 .multicolumn-text {
     column-width: 300px;
     column-gap: 20px;
-    column-count: 2; /* Текст у 2 колонки */
+    column-count: 2;
 }
 
 /* Секція 3 */
@@ -124,7 +124,6 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-/* Адаптивність: на вузьких екранах одна колонка, модальне вікно ширше */
 @media (max-width: 600px) {
     .multicolumn-text {
         column-count: 1;
